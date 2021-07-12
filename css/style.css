@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*
+ * (STYLESHEET)
+ * CSS.
+ * ECq'Studio
+ * http://ecq-studio.com
+ */
+ 
+	/* ////////////////////////////////////// */
+	/* FONT FACE */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* ANIMATE */
+	/* ////////////////////////////////////// */
+	
+		@-webkit-keyframes rotate360T /* Safari and Chrome */ {
+		  from {
+		    -ms-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -webkit-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    -ms-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -webkit-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+		@keyframes rotate360T {
+		  from {
+		    -ms-transform: rotate(0deg);
+		    -moz-transform: rotate(0deg);
+		    -webkit-transform: rotate(0deg);
+		    -o-transform: rotate(0deg);
+		    transform: rotate(0deg);
+		  }
+		  to {
+		    -ms-transform: rotate(360deg);
+		    -moz-transform: rotate(360deg);
+		    -webkit-transform: rotate(360deg);
+		    -o-transform: rotate(360deg);
+		    transform: rotate(360deg);
+		  }
+		}
+	
+	/* ////////////////////////////////////// */
+	/* STYLE ALL */
+	/* ////////////////////////////////////// */
+		
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: #000;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+		
+	/* ////////////////////////////////////// */
+	/* HEADER */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* SLIDEIMG */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* ARTICLE + ASIDE */
+	/* ////////////////////////////////////// */
+		
+		#exampleWrap{ 
+			display: table;
+		    position: absolute;
+		    top: 0px;
+		    bottom: 0px;
+		    left: 0px;
+		    right: 0px;
+		    margin: auto;
+		    width: 300px;
+		}
+		#exampleWrap img{ margin: 0px auto 0px;display: table;width: auto; }
+		#exampleId{ 
+			color: #fff;
+		    display: table;
+		    margin: auto;
+		    font-family: sans-serif;
+		    padding: 20px;
+		    border: 1px solid #fff;
+    	}
+    	#exampleId h4{ margin: auto;display: table; }
+    	.exampleClass{ 
+	   		color: #fff;
+		    display: table;
+		    margin: auto;
+		    font-family: sans-serif;
+		    padding: 10px;
+	   	}
+    	.exampleClass h6{ margin: auto;display: table; }
+    	.exampleClass h6 i{
+	    	font-size: 12px;
+	    	-webkit-animation: rotate360T 1s linear infinite;
+			-moz-animation: rotate360T 1s linear infinite;
+			-ms-animation: rotate360T 1s linear infinite;
+			-o-animation: rotate360T 1s linear infinite;
+			animation: rotate360T 1s linear infinite;
+    	}
+    	.exampleClass h6 a{ color: #fff;text-decoration: none; }
+    	.exampleClass h6 span:after{ content: 'Size Desktop' }
+	
+	/* ////////////////////////////////////// */
+	/* FOOTER */
+	/* ////////////////////////////////////// */
+
+/* ////////////////////////////////////// */
+/* RESPONSIVE SECTION */
+/* ////////////////////////////////////// */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	/* ////////////////////////////////////// */
+	/* STYLE ALL */
+	/* ////////////////////////////////////// */
+	
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: #ab0000;
+		}
+	
+	/* ////////////////////////////////////// */
+	/* HEADER */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* SLIDEIMG */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* ARTICLE + ASIDE */
+	/* ////////////////////////////////////// */
+	
+		.exampleClass h6 span:after{ content: 'Size Tablet' }
+	
+	/* ////////////////////////////////////// */
+	/* FOOTER */
+	/* ////////////////////////////////////// */
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+
+	/* ////////////////////////////////////// */
+	/* STYLE ALL */
+	/* ////////////////////////////////////// */
+	
+		body{
+			margin: 0px;
+			padding: 0px;
+			background: #007ed8;
+		}
+	
+	/* ////////////////////////////////////// */
+	/* HEADER */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* SLIDEIMG */
+	/* ////////////////////////////////////// */
+	
+	/* ////////////////////////////////////// */
+	/* ARTICLE + ASIDE */
+	/* ////////////////////////////////////// */
+	
+		.exampleClass h6 span:after{ content: 'Size Mobile' }
+	
+	/* ////////////////////////////////////// */
+	/* FOOTER */
+	/* ////////////////////////////////////// */
+}
